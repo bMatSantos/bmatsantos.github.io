@@ -55,17 +55,15 @@
 
 					var bloco = '<div class="item-grade px-1 py-2 col-sm-6 col-lg-4">'
 					+ '<div class="card text-center">' // Nome
-						+ '<div class="card-header rounded-0 bg-anil px-2 fw-bold txt-branco">'
-							+ patches[i].nomeA
-							if (patches[i].nomeB)
-								bloco += '<br class="nome-line-break"/>' + patches[i].nomeB;
-							bloco += '<br/>';
+						+ '<div class="card-header rounded-0 bg-anil px-0 fw-bold txt-branco">'
+							+ patches[i].nome
+							+ '<br/>';
 							
 							// Tags
 							if (patches[i].tags) {
 							for (var t = 0; t < patches[i].tags.length; t++) {
 								bloco +=
-								'<div class="badge bg-rosa txt-escuro rounded-pill">'+ patches[i].tags[t] +'</div>';
+								'<div class="badge bg-rosa fw-medium txt-escuro rounded-pill">'+ patches[i].tags[t] +'</div>';
 							}
 							}
 						bloco += '</div>'
@@ -75,18 +73,16 @@
 								+ '<source media="(max-width:300px)" srcset="img/' + patches[i].arquivo_img + '-300.png">'
 								+ '<source media="(max-width:768px)" srcset="img/' + patches[i].arquivo_img + '-768.png">'
 								+ '<source media="(max-width:1024px)" srcset="img/' + patches[i].arquivo_img + '-1024.png">'
-								+ '<img src="img/' + patches[i].arquivo_img + '.png" alt="' + patches[i].nomeA
-									if (patches[i].nomeB) bloco +=  patches[i].nomeB;
-									bloco += '" class="w-100">'
+								+ '<img src="img/' + patches[i].arquivo_img + '.png" alt="' + patches[i].nome + '" class="w-100">'
 							+ '</picture>'
 						+ '</div>'
 						// Versão
-						+ '<div class="card-footer rounded-0 fw-bold small txt-escuro">'
+						+ '<div class="card-footer rounded-0 txt-escuro">'
 							+ patches[i].ver + ' - ' + strDataVer
 						+ '</div>'
 						// Links
 						+ '<div class="card-footer rounded-0 px-2">'
-							+ '<div class="btn-group flex-wrap w-100">';
+							+ '<div class="btn-group flex-wrap w-100 fw-semibold">';
 							if (patches[i].github)
 								bloco += '<a type="button" class="btn" target="_blank" href="' + patches[i].github + '">Github</a>';
 							if (patches[i].gdrive)

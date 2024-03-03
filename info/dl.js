@@ -1,6 +1,6 @@
 var patches = [
 	{
-		nomeA: "Super Mario 64", nomeB: null,
+		nome: "Super Mario 64", nomeB: null,
 		tags: ["N64", "dublado"],
 		arquivo_img: "M64Logo",
 		mega: "https://mega.nz/#!M1MAmDRb!bJnqQWaRO0oN0unx5I4gmabG3bIOQvpzByEHnV3BQwE",
@@ -9,7 +9,7 @@ var patches = [
 		ver: "v1.0", status: "Completo", dataVer: new Date("20 May 2021")
 	},
 	{
-		nomeA: "Super Mario ", nomeB: "Só Estrelas",
+		nome: "Super Mario Só Estrelas",
 		tags: ["Super Nintendo"],
 		arquivo_img: "SMSE_alt",
 		mega: "https://mega.nz/#!shkgGb7L!jJ67aShpqt7Ulwp1HjnPIC1orPL-Nw5YzdncNHl6AFc",
@@ -18,7 +18,7 @@ var patches = [
 		ver: "v1.1", status: "Completo", dataVer: new Date("26 Dec 2022")
 	},
 	{
-		nomeA: "SMSE + Super ", nomeB: "Mundo Mario",
+		nome: "SMSE + Super Mundo Mario",
 		tags: ["Super Nintendo"],
 		arquivo_img: "SMSEM_capa",
 		mega: "https://mega.nz/#!x09l3DLB!2Fl-Pq6LJSQk-oIMS1uNRUChPKv3TJWVY5gwo7Phu0U",
@@ -27,7 +27,16 @@ var patches = [
 		ver: "v1.12", status: "Completo", dataVer: new Date("28 Dec 2022")
 	},
 	{
-		nomeA: "Mario vs. ", nomeB: "Donkey Kong",
+		nome: "Super Mario: A Ilha do Yoshi",
+		tags: ["Grupo ATLAS", "Super Nintendo"],
+		arquivo_img: "SM-AIDY",
+		mega: "https://mega.nz/file/kklklIQS#8RnrbOAQL6-UsfLy07QgsNkOMDAFc3mzeE_9caPUloE",
+		gdrive: null,
+		github: "https://github.com/bMatSantos/YI-ptbr/releases/download/t1.0/YI_PT-BR_1.0-Grupo_Atlas.zip",
+		ver: "v1.0", status: "Completo", dataVer: new Date("25 Jun 2023")
+	},
+	{
+		nome: "Mario vs. Donkey Kong",
 		tags: ["GBA", "dublado"],
 		arquivo_img: "MvDK_logo",
 		mega: "https://mega.nz/#!V1sUHYLb!7EWnUS8N2nNNZWSk4DNECgb5XYyWsahVJP3GSlSieuI",

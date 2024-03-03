@@ -9,7 +9,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
-	font-family: Metropolitano, sans-serif;
+	font-family: 'Metropolitano', sans-serif;
 	color: black;
 	background-color: rgb(var(--semibranco));
 
@@ -28,6 +28,10 @@ html, body {
 
 picture img {
 	width: auto;
+}
+
+.fw-bolder {
+	font-weight: 900!important;
 }
 
 /*.btn
@@ -55,46 +59,95 @@ picture img {
 
 /* FONTES */
 /*-- Metropolitano --*/
+	@font-face {
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-extralight.woff2') format('woff2'),
+				 url('../fonte/metropolitano-extralight.woff') format('woff');
+		font-weight: 100;
+	}
+	@font-face {
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-extralightitalic.woff2') format('woff2'),
+				 url('../fonte/metropolitano-extralightitalic.woff') format('woff');
+		font-weight: 100;
+		font-style: italic;
+	}
+	@font-face {
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-light.woff2') format('woff2'),
+				 url('../fonte/metropolitano-light.woff') format('woff');
+		font-weight: 300;
+	}
+	@font-face {
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-lightitalic.woff2') format('woff2'),
+				 url('../fonte/metropolitano-lightitalic.woff') format('woff');
+		font-weight: 300;
+		font-style: italic;
+	}
 @font-face {
-	font-family: Metropolitano;
-	src: url(../fonte/Metropolitano-Regular.ttf);
+	font-family: 'Metropolitano';
+	src: url('../fonte/metropolitano-regular.woff2') format('woff2'),
+			 url('../fonte/metropolitano-regular.woff') format('woff');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Metropolitano';
+	src: url('../fonte/metropolitano-italic.woff2') format('woff2'),
+			 url('../fonte/metropolitano-italic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
 }
 	@font-face {
-		font-family: Metropolitano;
-		src: url(../fonte/Metropolitano-Bold.ttf);
-		font-weight: bold;
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-medium.woff2') format('woff2'),
+				 url('../fonte/metropolitano-medium.woff') format('woff');
+		font-weight: 500;
 	}
 	@font-face {
-		font-family: Metropolitano;
-		src: url(../fonte/Metropolitano-Italic.ttf);
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-mediumitalic.woff2') format('woff2'),
+				 url('../fonte/metropolitano-mediumitalic.woff')  format('woff'); 	
+		font-weight: 500;
 		font-style: italic;
 	}
 	@font-face {
-		font-family: Metropolitano;
-		src: url(../fonte/Metropolitano-BoldItalic.ttf);
-		font-weight: bold;
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-semibold.woff2') format('woff2'),
+				 url('../fonte/metropolitano-semibold.woff') format('woff');
+		font-weight: 600;
+	}
+	@font-face {
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-semibolditalic.woff2') format('woff2'),
+				 url('../fonte/metropolitano-semibolditalic.woff') format('woff');
+		font-weight: 600;
 		font-style: italic;
 	}
 	@font-face {
-		font-family: Metropolitano;
-		src: url(../fonte/Metropolitano-ExtraBold.ttf);
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-bold.woff2') format('woff2'),
+				 url('../fonte/metropolitano-bold.woff') format('woff');
+		font-weight: 700;
+	}
+	@font-face {
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-bolditalic.woff2') format('woff2'),
+				 url('../fonte/metropolitano-bolditalic.woff') format('woff');
+		font-weight: 700;
+		font-style: italic;
+	}
+	@font-face {
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-extrabold.woff2') format('woff2'),
+				 url('../fonte/metropolitano-extrabold.woff') format('woff');
 		font-weight: 900;
 	}
 	@font-face {
-		font-family: Metropolitano;
-		src: url(../fonte/Metropolitano-ExtraBoldItalic.ttf);
+		font-family: 'Metropolitano';
+		src: url('../fonte/metropolitano-extrabolditalic.woff2') format('woff2'),
+				 url('../fonte/metropolitano-extrabolditalic.woff') format('woff');
 		font-weight: 900;
-		font-style: italic;
-	}
-	@font-face {
-		font-family: Metropolitano;
-		src: url(../fonte/Metropolitano-Light.ttf);
-		font-weight: lighter;
-	}
-	@font-face {
-		font-family: Metropolitano;
-		src: url(../fonte/Metropolitano-LightItalic.ttf);
-		font-weight: lighter;
 		font-style: italic;
 	}
 

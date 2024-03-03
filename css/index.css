@@ -24,6 +24,7 @@
 }
 
 .card-header, .card-footer {
+	text-wrap: balance;
 	border: none;
 }
 	.card .btn {
@@ -33,7 +34,7 @@
 		--bs-btn-active-color: rgba(var(--rosa), 0.45);
 
 		--bs-btn-font-size: 1.1rem;
-		--bs-btn-font-weight: bold;
+		--bs-btn-font-weight: inherit;
 		margin-top: .25rem;
 		width: 48%;
 	}
