@@ -186,6 +186,10 @@ picture img {
     max-width: 50% !important;
 }
 
+.anima {
+	transition: all var(--anim-tempo);
+}
+
 /* ------- RODAPÉ------- */
 footer {
 	background-color: rgba(var(--azul), 0.5);
