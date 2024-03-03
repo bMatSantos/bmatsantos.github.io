@@ -82,10 +82,11 @@
 						// Versão
 						+ '<div class="card-footer rounded-0 txt-escuro">'
 							+ patches[i].ver + ' - ' + strDataVer;
-							if (strDataVer != strDataLanc) bloco += '<br/>Publicada em ' + strDataLanc;
+							if (strDataVer != strDataLanc)
+								bloco += '<br/>Publicada em ' + strDataLanc;
 						bloco += '</div>'
 						// Links
-						+ '<div class="card-footer rounded-0 px-2">'
+						+ '<div class="card-footer rounded-0 pt-0 px-2">'
 							+ '<div class="btn-group flex-wrap w-100 fw-semibold">';
 							if (patches[i].github)
 								bloco += '<a type="button" class="btn" target="_blank" href="' + patches[i].github + '">Github</a>';
