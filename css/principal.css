@@ -26,10 +26,6 @@ html, body {
 	--anim-tempo: 0.1s ease;
 }
 
-[html-include="_footer.html"]{
-    padding: .5rem;
-}
-
 picture img {
 	width: auto;
 }
