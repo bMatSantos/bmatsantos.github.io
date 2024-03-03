@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<title>Traduções - bMatSantos</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Open Graph -->
+		<meta property="og:title" content="Traduções" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://bmatsantos.github.io" />
+		<meta property="og:image" content="https://bmatsantos.bitbucket.io/img/og/banner.png" />
+		<meta property="og:image:width" content="1920" />
+		<meta property="og:image:height" content="1080" />
+		<meta property="og:image:alt" content="bMatSantos" />
+		<meta property="og:site_name" content="bMatSantos" />
+		<meta property="og:description" content="Compilado de fã-traduções de vários jogos para português brasileiro." />
+
+		<meta name="description" 
+			content="Página do fã-tradutor focado em Super Mario e localização." />
+		<meta name="robots" content="index, follow">
+		<meta name="keywords" content="bMatSantos, bMats, bMat, fantranslation, tradução, português, pt-br">
+
+		<link rel="shortcut icon" href="img/favicon.png">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+		<!-- Masonry -->
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+		<!-- imagesLoaded -->
+		<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+		
+		<link rel="stylesheet" href="css/index.css">
+
+		<script src="info/dl.js"></script>
+		<script>
+			$(function(){
+				for (var i = 0; i < patches.length; i++) {
+					imagemCard = "img/layout/unknown.png";
+
+					// Verificando se há imagem da capa
+					// if (patches[i].arquivo_img)
+					// 	imagemCard = 'img/boxart/'+ patches[i].capa;
+
+					// Ajustando data
+					strDataVer = ('0' + patches[i].dataVer.getDate()).slice(-2) + '/'
+					             + ('0' + (patches[i].dataVer.getMonth()+1)).slice(-2) + '/'
+					             + patches[i].dataVer.getFullYear();
+
+					var bloco = '<div class="item-grade px-1 py-2 col-sm-6 col-lg-4">'
+					+ '<div class="card text-center">' // Nome
+						+ '<div class="card-header rounded-0 bg-anil px-2 fw-bold txt-branco">'
+							+ patches[i].nomeA
+							if (patches[i].nomeB)
+								bloco += '<br class="nome-line-break"/>' + patches[i].nomeB;
+							bloco += '<br/>';
+							
+							// Tags
+							if (patches[i].tags) {
+							for (var t = 0; t < patches[i].tags.length; t++) {
+								bloco +=
+								'<div class="badge bg-rosa txt-escuro rounded-pill">'+ patches[i].tags[t] +'</div>';
+							}
+							}
+						bloco += '</div>'
+						
+						+ '<div class="card-body d-flex">'	// Imagem
+							+ '<picture class="mx-auto w-100">'
+								+ '<source media="(max-width:300px)" srcset="img/' + patches[i].arquivo_img + '-300.png">'
+								+ '<source media="(max-width:768px)" srcset="img/' + patches[i].arquivo_img + '-768.png">'
+								+ '<source media="(max-width:1024px)" srcset="img/' + patches[i].arquivo_img + '-1024.png">'
+								+ '<img src="img/' + patches[i].arquivo_img + '.png" alt="' + patches[i].nomeA
+									if (patches[i].nomeB) bloco +=  patches[i].nomeB;
+									bloco += '" class="w-100">'
+							+ '</picture>'
+						+ '</div>'
+						// Versão
+						+ '<div class="card-footer rounded-0 fw-bold small txt-escuro">'
+							+ patches[i].ver + ' - ' + strDataVer
+						+ '</div>'
+						// Links
+						+ '<div class="card-footer rounded-0 px-2">'
+							+ '<div class="btn-group flex-wrap w-100">';
+							if (patches[i].github)
+								bloco += '<a type="button" class="btn" target="_blank" href="' + patches[i].github + '">Github</a>';
+							if (patches[i].gdrive)
+								bloco += '<a type="button" class="btn" target="_blank" href="' + patches[i].gdrive + '">Drive</a>';
+							if (patches[i].mega)
+								bloco += '<a type="button" class="btn" target="_blank" href="' + patches[i].mega + '">MEGA</a>';
+							bloco += '</div>'
+						+ '</div>'
+					+ '</div></div>';
+
+					$('#grade').append(bloco);
+	            }
+
+	            var $grid = $('#grade').masonry({
+					// options
+					itemSelector: '.item-grade',
+					percentPosition: true,
+					transitionDuration: '0s',
+					horizontalOrder: true,
+				});
+
+				setInterval(function(){
+					for (var n = 1; n <= $('.item-grade').length; n++) {
+		            	var thisCard = '.item-grade:nth-child('+n+') .card';
+
+		            	if ($(thisCard+' .card-header').width() > 278) {
+		            		 $(thisCard+' .nome-line-break').hide();
+		            	} else {
+		            		 $(thisCard+' .nome-line-break').show();
+		            	}
+		            }
+
+		            // layout Masonry after each image loads
+					$grid.imagesLoaded().progress(function() {
+						$grid.masonry('layout');
+					});
+	        	}, $('.item-grade').length*2);
+			});
+		</script>
+	</head>
+
+	<body>
+		<section id="hero" class="bg-azul container-fluid m-0 row align-items-center">
+			<img src="img/pixel-logo.png" alt="bMatSantos (Logo)" class="pixel-art img-fluid p-0 mx-auto">
+		</section>
+
+		<h1 class="d-none">Patches de Tradução</h1>
+
+		<main class="container-md mx-auto p-2 mt-4 mb-5 row justify-content-center">
+			<p class="px-md-4 mb-4 font-weight-bold font-italic w-100">
+				Todos os patches podem ser distribuídos em outros lugares, desde que gratuitamente e que seus conteúdos sejam preservados. Os patches e o jogo traduzido não podem ser usados para vendas impróprias e ilegais.
+			</p>
+
+			<div id="grade" class="p-0"></div>
+		</main>
+
+		<!-- Rodapé -->
+		<div html-include="_footer.html"></div>
+
+		<script src="js/common.js"></script>
+	</body>
+</html>

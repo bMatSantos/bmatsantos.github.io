@@ -1,0 +1,46 @@
+<footer class=" d-flex flex-column flex-sm-row
+	p-4 rounded-pill
+	align-items-center justify-content-between justify-content-lg-around">			
+	<!-- Logo -->
+	<div>
+		<a href="https://bmatsantos.github.io">
+			<img src="img/pixel-M.png" alt="bMatSantos (ícone)" class="pixel-art img-fluid p-0 mx-auto" style="width: 96px;">
+		</a>
+	</div>
+
+	<!-- Logo -->
+	<div>
+		&#127463;<small></small>&#127479; <span id="ano"></span> bMatSantos
+	</div>
+
+	<!-- Redes Sociais -->
+	<div class="social mt-3 mb-4 my-sm-0">
+		<!-- Youtube -->
+		<a href="https://www.youtube.com/@bMatsanBR" target="_blank" class="rounded-50">
+			<img src="img/layout/yt_icon.svg" alt="YouTube"></a>
+
+		<!-- Twitter -->
+		<a href="https://twitter.com/bMatsantos" target="_blank" class="rounded-50">
+			<img src="img/layout/twitter_icon.svg" alt="Twitter"></a>
+
+		<!-- Bluesky -->
+		<a href="https://bsky.app/profile/bmatsantos.bsky.social" target="_blank" class="rounded-50">
+			<img src="img/layout/bluesky_icon.svg" alt="Bluesky"></a>
+	</div>
+
+	<!-- Rolar para o Topo -->
+	<!-- <div id="pag-topo" class="large py-2 px-4 fixed-bottom sombra">
+		<i class="i-seta cima"></i>
+	</div> -->
+</footer>
+
+<script>
+	//Atualizar ano do rodapé automaticamente
+	var today = new Date();
+	$('#ano').html(today.getFullYear());
+	
+	//Voltar ao topo da página
+	$('#pag-topo').click(function(){
+		$(document).scrollTop(0);
+	});
+</script>

@@ -1,0 +1,161 @@
+@charset "utf-8";
+/*@import "icones-jts.css";*/
+/* AJUSTES GERAIS */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-family: Metropolitano, sans-serif;
+	color: black;
+	background-color: rgb(var(--semibranco));
+
+	/* Variáveis das cores*/
+	--semibranco: 248, 248, 248;
+	--azul: 0, 185, 254;
+	--anil: 5, 73, 114;
+	--escuro: 17, 37, 53;
+	--vermelho: 233, 32, 14;
+	--amarelo: 255, 225, 13;
+	--rosa: 255, 128, 145;
+
+
+	--anim-tempo: 0.1s ease;
+}
+
+[html-include="_footer.html"]{
+    padding: .5rem;
+}
+
+picture img {
+	width: auto;
+}
+
+/*.btn
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #0d6efd;
+	--bs-btn-border-color: #0d6efd;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #0b5ed7;
+	--bs-btn-hover-border-color: #0a58ca;
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #0a58ca;
+	--bs-btn-active-border-color: #0a53be;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #0d6efd;
+	--bs-btn-disabled-border-color: #0d6efd;
+}*/
+
+.btn {
+	border-radius: var(--bs-border-radius-pill) !important;
+	border-width: 2px;
+	overflow: hidden;
+}
+
+/* FONTES */
+/*-- Metropolitano --*/
+@font-face {
+	font-family: Metropolitano;
+	src: url(../fonte/Metropolitano-Regular.ttf);
+}
+	@font-face {
+		font-family: Metropolitano;
+		src: url(../fonte/Metropolitano-Bold.ttf);
+		font-weight: bold;
+	}
+	@font-face {
+		font-family: Metropolitano;
+		src: url(../fonte/Metropolitano-Italic.ttf);
+		font-style: italic;
+	}
+	@font-face {
+		font-family: Metropolitano;
+		src: url(../fonte/Metropolitano-BoldItalic.ttf);
+		font-weight: bold;
+		font-style: italic;
+	}
+	@font-face {
+		font-family: Metropolitano;
+		src: url(../fonte/Metropolitano-ExtraBold.ttf);
+		font-weight: 900;
+	}
+	@font-face {
+		font-family: Metropolitano;
+		src: url(../fonte/Metropolitano-ExtraBoldItalic.ttf);
+		font-weight: 900;
+		font-style: italic;
+	}
+	@font-face {
+		font-family: Metropolitano;
+		src: url(../fonte/Metropolitano-Light.ttf);
+		font-weight: lighter;
+	}
+	@font-face {
+		font-family: Metropolitano;
+		src: url(../fonte/Metropolitano-LightItalic.ttf);
+		font-weight: lighter;
+		font-style: italic;
+	}
+
+
+/* CLASSES */
+.bg-branco {background-color: white;}
+.bg-azul {background-color: rgb(var(--azul));}
+.bg-anil {background-color: rgb(var(--anil));}
+.bg-escuro {background-color: rgb(var(--escuro));}
+.bg-vermelho {background-color: rgb(var(--vermelho));}
+.bg-amarelo {background-color: rgb(var(--amarelo));}
+.bg-rosa {background-color: rgb(var(--rosa));}
+
+.txt-branco {color: white;}
+.txt-azul {color: rgb(var(--azul));}
+.txt-anil {color: rgb(var(--anil));}
+.txt-escuro {color: rgb(var(--escuro));}
+.txt-vermelho {color: rgb(var(--vermelho));}
+.txt-amarelo {color: rgb(var(--amarelo));}
+.txt-rosa {color: rgb(var(--rosa));}
+
+.font-weight-bold {font-weight: bold;}
+
+.font-italic {font-style: italic;}
+
+.pixel-art {
+    image-rendering: pixelated;
+}
+
+.paralelograma {
+	transform: skew(-13deg);
+}
+
+.mw-50 {
+    max-width: 50% !important;
+}
+
+/* ------- RODAPÉ------- */
+footer {
+	background-color: rgba(var(--azul), 0.5);
+}
+
+.social a {
+	background-color: rgb(var(--semibranco));
+	padding: 8px;
+	border-radius: 50rem;
+	width: 52px;
+	height: 52px;
+	display: inline-block;
+	transition: all var(--anim-tempo);
+}
+	.social a:hover {
+		background-color: rgb(var(--amarelo));
+	}
+	.social a:not(:first-child) { margin-left: 4px;}
+
+.social img {
+	margin: 4px 0;
+	width: 100%;
+}

@@ -1,0 +1,52 @@
+@import "principal.css";
+
+#hero {
+	height: 25%;
+}
+	#hero img {
+		width: 50%;
+	}
+
+
+.card {
+	--bs-border-width: 4px;
+	--bs-card-border-color: rgb(var(--anil));
+	--bs-card-border-radius: none;
+	--bs-card-bg: rgba(var(--anil), 0.05);
+	--bs-card-cap-bg: none;
+    box-shadow: rgb(var(--anil)) 0px 5px 0px;
+}
+.card-header, .card-header {
+	font-size: 1.275rem;
+}
+.card .badge:not(:first-child) {
+	margin-left: .25rem
+}
+
+.card-header, .card-footer {
+	border: none;
+}
+	.card .btn {
+		--bs-btn-color: white;
+		--bs-btn-bg: rgb(var(--vermelho));
+		--bs-btn-hover-bg: rgb(var(--rosa));
+		--bs-btn-active-color: rgba(var(--rosa), 0.45);
+
+		--bs-btn-font-size: 1.1rem;
+		--bs-btn-font-weight: bold;
+		margin-top: .25rem;
+		width: 48%;
+	}
+	.card .btn:first-child {
+		margin-right: .5rem
+	}
+
+	.card .btn:last-child:nth-child(odd) {
+		margin-left: 0;
+	}
+
+@media only screen and (min-width: 1200px) {
+	#hero {
+		height: 40%;
+	}
+}
