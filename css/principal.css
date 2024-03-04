@@ -16,12 +16,12 @@ html, body {
 
 	/* Variáveis das cores*/
 	--semibranco: 248, 248, 248;
-	--azul: 0, 185, 254;
+	--azul: 0, 185, 255;
 	--anil: 5, 73, 114;
 	--escuro: 17, 37, 53;
-	--vermelho: 233, 32, 14;
+	--vermelho: 231, 13, 32;
 	--amarelo: 255, 225, 13;
-	--rosa: 255, 128, 145;
+	--rosa: 255, 153, 170;
 
 
 	--anim-tempo: 0.1s ease;

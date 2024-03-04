@@ -31,7 +31,9 @@
 		--bs-btn-color: white;
 		--bs-btn-bg: rgb(var(--vermelho));
 		--bs-btn-hover-bg: rgb(var(--rosa));
-		--bs-btn-active-color: rgba(var(--rosa), 0.45);
+		--bs-btn-active-bg: rgb(var(--semibranco));
+		--bs-btn-active-color: rgb(var(--rosa));
+		--bs-btn-active-border-color: rgba(var(--rosa), 0.45);
 
 		--bs-btn-font-size: 1.1rem;
 		--bs-btn-font-weight: inherit;
