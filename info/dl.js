@@ -27,7 +27,7 @@ var patches = [
 		ver: "v1.1", dataVer: new Date("26 Dec 2022"), dataLanc: new Date("17 Oct 2022")
 	},
 	{
-		nome: "SMSE + Super Mundo Mario",
+		nome: "Só Estrelas + Mundo Mario",
 		tags: ["Super Nintendo"],
 		arquivo_img: "SMSEM_capa",
 		mega: "https://mega.nz/#!x09l3DLB!2Fl-Pq6LJSQk-oIMS1uNRUChPKv3TJWVY5gwo7Phu0U",
