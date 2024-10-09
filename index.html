@@ -59,14 +59,13 @@
 					var bloco = '<div class="item-grade px-1 py-2 col-sm-6 col-lg-4">'
 					+ '<div class="card text-center">' // Nome
 						+ '<div class="card-header rounded-0 bg-anil px-0 fw-bold txt-branco">'
-							+ patches[i].nome
-							+ '<br/>';
+							+'<h2 class="h3 mb-1">' + patches[i].nome + '</h2>';
 							
 							// Tags
 							if (patches[i].tags) {
 							for (var t = 0; t < patches[i].tags.length; t++) {
 								bloco +=
-								'<div class="badge bg-rosa fw-medium txt-anil rounded-pill">'+ patches[i].tags[t] +'</div>';
+								'<h3 class="badge bg-rosa fw-medium txt-anil rounded-pill mb-0">'+ patches[i].tags[t] +'</h3>';
 							}
 							}
 						bloco += '</div>'
@@ -80,8 +79,8 @@
 							+ '</picture>'
 						+ '</div>'
 						// Versão
-						+ '<div class="card-footer rounded-0 txt-escuro">'
-							+ patches[i].ver + ' - ' + strDataVer;
+						+ '<div class="card-footer rounded-0"><strong>'
+							+ patches[i].ver + '</strong> - ' + strDataVer;
 							if (strDataVer != strDataLanc)
 								bloco += '<br/>Publicada em ' + strDataLanc;
 						bloco += '</div>'
@@ -128,7 +127,7 @@
 
 		<main class="container-md mx-auto p-2 mt-4 mb-5 row justify-content-center">
 			<p class="px-md-4 mb-4 font-weight-bold font-italic w-100">
-				Todos os patches podem ser distribuídos em outros lugares, desde que gratuitamente e que seus conteúdos sejam preservados. Os patches e o jogo traduzido não podem ser usados para vendas impróprias e ilegais.
+				Todos os patches podem ser distribuídos em outros lugares, desde que gratuitamente e que seus conteúdos sejam preservados. Os patches e o jogos traduzidos não podem ser usados para vendas impróprias e ilegais.
 			</p>
 
 			<div id="grade" class="p-0"></div>
