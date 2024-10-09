@@ -201,7 +201,7 @@ footer {
 	border-radius: 50rem;
 	width: 52px;
 	height: 52px;
-	display: inline-block;
+	display: inline-flex;
 	transition: all var(--anim-tempo);
 }
 	.social a:hover {
