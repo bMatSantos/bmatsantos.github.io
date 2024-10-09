@@ -4,7 +4,7 @@
 	height: 25%;
 }
 	#hero img {
-		width: 50%;
+		width: 90%;
 	}
 
 
@@ -47,6 +47,12 @@
 	.card .btn:last-child:nth-child(odd) {
 		margin-left: 0;
 	}
+
+@media only screen and (min-width: 576px) {
+	#hero img {
+		width: 50%;
+	}
+}
 
 @media only screen and (min-width: 1200px) {
 	#hero {
