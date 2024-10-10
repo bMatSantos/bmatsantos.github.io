@@ -24,7 +24,7 @@ html, body {
 	--rosa: 255, 153, 170;
 
 
-	--anim-tempo: 0.1s ease;
+	--anim-tempo: 0.25s cubic-bezier(0, 0, 0, 1);
 }
 
 picture img {
@@ -161,6 +161,7 @@ picture img {
 .bg-vermelho {background-color: rgb(var(--vermelho));}
 .bg-amarelo {background-color: rgb(var(--amarelo));}
 .bg-rosa {background-color: rgb(var(--rosa));}
+.bg-semibranco {background-color: rgb(var(--semibranco));}
 
 .txt-branco {color: white;}
 .txt-azul {color: rgb(var(--azul));}
@@ -189,8 +190,25 @@ picture img {
 .anima {
 	transition: all var(--anim-tempo);
 }
+/* ------- CABEÇALHO ------- */
+#hero .paralelograma {
+    position: absolute;
+    width: 120vw;
+    height: 102%;
+    transform: skew(-13deg) translateX(110vw);
+}
 
-/* ------- RODAPÉ------- */
+#hero {
+	height: 25%;
+	overflow: hidden;
+	position: relative;
+}
+
+#hero img {
+	transition: all var(--anim-tempo);
+}
+
+/* ------- RODAPÉ ------- */
 footer {
 	background-color: rgba(var(--azul), 0.5);
 }
@@ -212,4 +230,27 @@ footer {
 .social img {
 	margin: 4px 0;
 	width: 100%;
+}
+
+/* ------------------------- */
+@media only screen and (min-width: 576px) {
+	#hero img {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#hero {
+		height: 40%;
+	}
+}
+
+/* ------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+	#hero .paralelograma.onscreen {
+		transform: skew(-13deg) scaleX(1.5);
+	}
+	#hero img.offscreen {
+		transform: translateX(100vw);
+	}
 }

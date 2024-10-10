@@ -1,13 +1,5 @@
 @import "principal.css";
 
-#hero {
-	height: 25%;
-}
-	#hero img {
-		width: 90%;
-	}
-
-
 .card {
 	--bs-border-width: 4px;
 	--bs-card-border-color: rgb(var(--anil));
@@ -16,7 +8,7 @@
 	--bs-card-cap-bg: none;
     box-shadow: rgb(var(--anil)) 0px 5px 0px;
 }
-.card-header, .card-header {
+.card-header {
 	font-size: 1.275rem;
 }
 .card .badge:not(:first-child) {
@@ -47,15 +39,4 @@
 	.card .btn:last-child:nth-child(odd) {
 		margin-left: 0;
 	}
-
-@media only screen and (min-width: 576px) {
-	#hero img {
-		width: 50%;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	#hero {
-		height: 40%;
-	}
-}
+	
